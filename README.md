@@ -28,10 +28,14 @@
      ```bash
      pnpm install
      ```
-5. **샘플 코드 실행**
-   - `index.js` 파일을 실행하여 Node.js가 제대로 동작하는지 확인할 수 있습니다.
+5. **TODO API 실행**
+   - `pnpm start` 명령을 통해 간단한 TODO API 서버를 실행할 수 있습니다.
      ```bash
-     node index.js
+     pnpm start
+     ```
+   - 서버가 실행되면 `http://localhost:3000/todos` 경로로 CRUD 요청을 보낼 수 있습니다. 예를 들어 TODO 추가:
+     ```bash
+     curl -X POST http://localhost:3000/todos -H "Content-Type: application/json" -d '{"title":"공부하기"}'
      ```
 
 ## 기타 정보
