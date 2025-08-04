@@ -5,7 +5,7 @@ const app = express();
 
 app.use((req, res, next) => {
   console.log("hello");
-  next(); // 요청 처리를 계속 이어가게 함
+  next(); // 요청 처리를 계속 이어가게 함,next() 없이 응답 호출하면 미들웨어 도달 불가
 });
 
 app.use((req, res, next) => {
