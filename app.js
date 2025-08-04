@@ -10,7 +10,7 @@ app.use((req, res, next) => {
 
 app.use((req, res, next) => {
   console.log("hello2");
-  res.send("<h1>This is from Hello2</h1>");
+  res.send("<h1>This is from Hello2</h1>"); //기본 응답은 text/html
 });
 
 // Express 앱을 http 서버에 연결해야 함
